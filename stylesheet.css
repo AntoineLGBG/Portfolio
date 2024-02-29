@@ -101,5 +101,29 @@ h1{
 
 h2{
     font-family: 'Times New Roman', Times, serif;
-    
+    font-size: 350%;
+    font-weight: 400;
+    padding-top: 2%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
+
+.medecouvrir p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 125%;
+    margin: 2% 20% 0 20%;
+}
+
+.qualité{
+    text-align: center;
+}
+
+.medecouvrir ul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 125%;
+    text-align: center;
+    list-style-position: inside;
+}
+
+
