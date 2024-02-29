@@ -126,4 +126,18 @@ h2{
     list-style-position: inside;
 }
 
+.button_white{
+    color: black; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 5% 0 0 70%;
+    font-size: 16px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    background-color: white;
+}
 
+.button_white a{
+    text-decoration: none;
+    color: black;
+}
