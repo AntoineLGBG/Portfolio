@@ -193,3 +193,46 @@ h2{
     display: flex;
     flex-direction: row;
 }
+
+/*<--------footer-------->*/
+footer {
+    background-color: rgb(17,17,17);
+    color: white;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.colonne {
+    flex: 1;
+}
+
+.colonne h3 {
+    margin-bottom: 10px;
+    font-size: 150%;
+    text-align: center;
+}
+
+.colonne p, .colonne ul {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.colonne ul {
+    padding-left: 0;
+    font-size: 125%;
+    text-align: center;
+}
+
+.colonne ul li {
+    list-style: none;
+}
+
+.colonne ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.colonne ul li a:hover {
+    color: #666;
+}
