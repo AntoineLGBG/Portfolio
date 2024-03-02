@@ -228,6 +228,35 @@ h2{
     color: white;
 }
 
+.trait-passion{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.medecouvrir-trois img {
+    width: 10%;
+}
+
+.liste-passion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 8% 0 8%;
+}
+
+.lecture{
+    margin: 0 2% 0 2%;
+}
+
+.jeux-video{
+    margin: 0 2% 0 2%;
+}
+
+.films-series{
+    margin: 0 2% 0 2%;
+}
+
 /*<--------footer-------->*/
 footer {
     background-color: rgb(17,17,17);
