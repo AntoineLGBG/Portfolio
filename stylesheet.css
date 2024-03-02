@@ -97,10 +97,10 @@ h1{
 .medecouvrir{
     background-color: rgb(123,220,181);
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h2{
-    font-family: 'Times New Roman', Times, serif;
     font-size: 350%;
     font-weight: 400;
     padding-top: 2%;
@@ -110,7 +110,6 @@ h2{
 }
 
 .medecouvrir p{
-    font-family: 'Times New Roman', Times, serif;
     font-size: 125%;
     margin: 2% 20% 0 20%;
 }
@@ -120,7 +119,6 @@ h2{
 }
 
 .medecouvrir ul{
-    font-family: 'Times New Roman', Times, serif;
     font-size: 125%;
     text-align: center;
     list-style-position: inside;
@@ -130,7 +128,7 @@ h2{
     color: black; 
     border: none; 
     padding: 10px 20px; 
-    margin: 5% 0 0 70%;
+    margin: 5% 0 5% 70%;
     font-size: 16px;
     border-radius: 5px; 
     cursor: pointer; 
@@ -140,4 +138,58 @@ h2{
 .button_white a{
     text-decoration: none;
     color: black;
+}
+
+/*<--------deuxième partie-------->*/
+
+.projets{
+    font-family: "Readex Pro", sans-serif;
+    color: white;
+}
+
+.premiere-ligne{
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    margin-left: 10%;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(80% - 20px); 
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); 
+        flex-wrap: wrap;
+    }
+}
+
+.card img {
+    width: 600px; 
+    height: auto;
+    object-fit: cover; 
+}
+
+.card-body {
+    padding: 20px;
+    background-color: rgb(40,40,40);
+    margin-bottom: 5%;
+}
+
+.button_cards{
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 5% 0 0 0;
+    font-size: 16px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    background-color: rgb(123,220,181);
+}
+
+.deuxieme-ligne{
+    display: flex;
+    flex-direction: row;
 }
