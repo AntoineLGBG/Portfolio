@@ -194,13 +194,49 @@ h2{
     flex-direction: row;
 }
 
+/*<--------Page me découvrir-------->*/
+
+.medecouvrir-description{
+    color: white;
+    font-size: 150%;
+    font-weight: 400;
+    padding: 5% 5% 0 5%;
+    margin: 0 0 0 15%;
+}
+
+.medecouvrir-img{
+    width: 35%;
+    height: 15%;
+    margin-right: 10%;
+}
+
+.medecouvrir-deux{
+    background-color: rgb(123,220,181);
+    color: white;
+}
+.medecouvrir-deux p{
+    font-family: "Readex Pro", sans-serif;
+    font-size: 125%;
+    margin: 2% 20% 0 20%;
+}
+
+.fin-partdeux{
+    padding-bottom: 5%;
+}
+
+.medecouvrir-trois{
+    color: white;
+}
+
 /*<--------footer-------->*/
 footer {
     background-color: rgb(17,17,17);
     color: white;
     padding: 5%;
+    padding-bottom: 7%;
     display: flex;
     justify-content: space-around;
+    position: relative; 
 }
 
 .colonne {
@@ -235,4 +271,35 @@ footer {
 
 .colonne ul li a:hover {
     color: #666;
+}
+
+.trait-footer{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20%;
+}
+
+.trait-footer p {
+    text-align: center; /* Centre le texte de la ligne */
+}
+.logo-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 10px;
+    right: 10px; 
+}
+
+.logo-container .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px; 
+}
+
+.logo-container .logo img {
+    width: 100%;
+    height: auto;
 }
