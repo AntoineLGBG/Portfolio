@@ -15,7 +15,7 @@ header a{
     padding: 15px;
 }
 .header_right a:hover{
-    color:rgb(123,220,181);
+    color:rgb(9,171,157);
 }
 
 .header_left{
@@ -26,6 +26,33 @@ header a{
 
 .header_right{
     justify-content: space-between;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*<--------retour en haut de la page-------->*/
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 1000; /* Assurez-vous que la flèche soit au-dessus de tous les autres éléments */
+}
+
+.scroll-to-top:hover {
+    opacity: 0.8;
 }
 
 /*<--------Body-------->*/
@@ -58,7 +85,7 @@ h1{
 }
 
 .prenom{
-    color: rgb(123,220,181);
+    color: rgb(9,171,157);
     font-size: 350%;
     font-family: "Readex Pro", sans-serif;
     font-weight: 600;
@@ -84,7 +111,7 @@ h1{
     font-size: 16px;
     border-radius: 5px; 
     cursor: pointer; 
-    background-color: rgb(123,220,181);
+    background-color: rgb(9,171,157);
 }
 
 .button_green a{
@@ -95,7 +122,7 @@ h1{
 /*<--------deuxième partie-------->*/
 
 .medecouvrir{
-    background-color: rgb(123,220,181);
+    background-color: rgb(9,171,157);
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -186,7 +213,7 @@ h2{
     font-size: 16px;
     border-radius: 5px; 
     cursor: pointer; 
-    background-color: rgb(123,220,181);
+    background-color: rgb(9,171,157);
 }
 
 .deuxieme-ligne{
@@ -211,7 +238,7 @@ h2{
 }
 
 .medecouvrir-deux{
-    background-color: rgb(123,220,181);
+    background-color: rgb(9,171,157);
     color: white;
 }
 .medecouvrir-deux p{
@@ -299,7 +326,7 @@ footer {
 }
 
 .colonne ul li a:hover {
-    color: #666;
+    color: rgb(9,171,157);
 }
 
 .trait-footer{
@@ -310,7 +337,7 @@ footer {
 }
 
 .trait-footer p {
-    text-align: center; /* Centre le texte de la ligne */
+    text-align: center; 
 }
 .logo-container {
     position: absolute;

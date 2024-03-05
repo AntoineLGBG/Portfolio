@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-dTfwGEaxHSSKtsqMS4nHsNenHM6brFCasq3OVrP4ChJ6bHnm1X8K5L8x4xHtAMoI" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inter&family=Montserrat&family=Nosifer&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
@@ -15,8 +16,8 @@
     </div>
     <div class="header_right">
         <a href="accueil.html">Accueil</a>
-        <a href="medecouvrir.html">Me découvrir</a>
-        <a href="">Mes projets</a>
+        <a href="#partie-md">Me découvrir</a>
+        <a href="#partie-mps">Mes projets</a>
     </div>
 </header>
 
@@ -32,7 +33,7 @@
     </div>
 
     <div class="medecouvrir">
-        <h2>Me Découvrir</h2>
+        <h2 id="partie-md">Me Découvrir</h2>
 
         <p>Je suis actuellement étudiant en MMI (Métiers du Multimédia et de l’Internet). 
             Je maîtrise des langages de programmation tels que HTML, CSS, JavaScript et SQL, ainsi que des logiciels de la suite Adobe.</p>
@@ -51,7 +52,7 @@
     </div>
 
     <div class="projets">
-        <h2>MES PROJETS MMI</h2>
+        <h2 id="partie-mps">MES PROJETS MMI</h2>
         <div class="premiere-ligne">
             <div class="premier-p">
                 <div class="card">
@@ -98,6 +99,10 @@
             </div>
         </div>
     </div>
+
+    <a id="scrollToTop" href="#" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <footer>
         <div class="colonne">
