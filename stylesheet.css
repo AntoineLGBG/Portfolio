@@ -33,27 +33,7 @@ html {
 }
 
 /*<--------retour en haut de la page-------->*/
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgb(255, 255, 255);
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: opacity 0.3s;
-    opacity: 0;
-    z-index: 1000; /* Assurez-vous que la flèche soit au-dessus de tous les autres éléments */
-}
 
-.scroll-to-top:hover {
-    opacity: 0.8;
-}
 
 /*<--------Body-------->*/
 body{
@@ -69,6 +49,15 @@ body{
     margin-bottom: 5%;
 }
 
+.presentation p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: 400;
+    padding: 5% 5% 0 5%;
+    margin: 0 0 0 15%;
+}
+
 .presentation img{
     width: 35%;
     height: 20%;
@@ -79,7 +68,7 @@ h1{
     font-size: 350%;
     font-family: "Readex Pro", sans-serif;
     font-weight: 600;
-    color: white;
+    color: rgb(9,171,157);
     padding: 5% 5% 0 5%;
     margin: 15% 0 0 15%;
 }
@@ -282,6 +271,110 @@ h2{
 
 .films-series{
     margin: 0 2% 0 2%;
+}
+
+/*<--------Page Projet Photo-------->*/
+
+.projetp-description{
+    color: white;
+    font-size: 150%;
+    font-weight: 400;
+    padding: 5% 5% 0 5%;
+    margin: 0 0 0 15%;
+}
+
+.projetp-img{
+    width: 35%;
+    height: 15%;
+    margin-right: 10%;
+    border-radius: 45%;
+}
+
+.projetp-titre{
+    font-size: 350%;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 600;
+    color: rgb(9,171,157);
+}
+
+.projetp-titre-paysage{
+    font-size: 350%;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 600;
+    color: rgb(9,171,157);
+}
+
+.projetp-text{
+    background-color:rgb(40,40,40);
+    color: white;
+    text-align: center;
+    margin: 0 0 0 15%;
+    padding: 10% 10% 0 10%;
+}
+
+.projetp-text-paysage{
+    background-color:rgb(40,40,40);
+    color: white;
+    text-align: center;
+    padding: 15% 10% 0 10%;
+}
+
+.projetp-description-premier{
+    font-size: 125%;
+    font-family: "Readex Pro", sans-serif;
+}
+
+.projetp-description-deuxieme{
+    font-size: 125%;
+    font-family: "Readex Pro", sans-serif;
+    color: white;
+}
+.projetp-portrait{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.projetp-paysage{
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto; 
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+.carousel img {
+    width: 70%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.carousel-control.prev {
+    left: 5%;
+}
+
+.carousel-control.next {
+    right: 34%;
 }
 
 /*<--------footer-------->*/

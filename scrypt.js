@@ -1,22 +1,31 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const prevButton = document.querySelector('.carousel-control.prev');
+    const nextButton = document.querySelector('.carousel-control.next');
+    const carouselInner = document.querySelector('.carousel-inner');
+    const items = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
 
-
-// Sélectionnez la flèche
-const scrollToTopButton = document.getElementById('scrollToTop');
-
-// Ajoutez un écouteur d'événements au clic
-scrollToTopButton.addEventListener('click', () => {
-    // Faites défiler vers le haut de la page avec un effet smooth
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+    prevButton.addEventListener('click', () => {
+        if (currentIndex === 0) {
+            currentIndex = items.length - 1;
+        } else {
+            currentIndex--;
+        }
+        updateCarousel();
     });
-});
 
-// Affichez la flèche lorsque vous faites défiler la page vers le bas
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        scrollToTopButton.style.opacity = '1';
-    } else {
-        scrollToTopButton.style.opacity = '0';
+    nextButton.addEventListener('click', () => {
+        if (currentIndex === items.length - 1) {
+            currentIndex = 0;
+        } else {
+            currentIndex++;
+        }
+        updateCarousel();
+    });
+
+    function updateCarousel() {
+        const offset = -currentIndex * carouselInner.clientWidth;
+        carouselInner.style.transform = `translateX(${offset}px)`;
     }
 });
+
