@@ -251,6 +251,7 @@ h2{
 
 .medecouvrir-trois img {
     width: 10%;
+    pointer-events: none;
 }
 
 .liste-passion{
@@ -273,6 +274,33 @@ h2{
     margin: 0 2% 0 2%;
 }
 
+.CV{
+    align-items: center;
+    text-align: center;
+}
+
+.CV p{
+    color: white;
+}
+
+.CV img{
+    width: 35%;
+    margin-bottom: 5%;
+}
+.moncv{
+    color: rgb(9,171,157);
+}
+
+.generateDownloadButton{
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 0 0 5% 40%;
+    font-size: 16px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    background-color: rgb(9,171,157);
+}
 /*<--------Page Projet Photo-------->*/
 
 .projetp-description{
@@ -288,6 +316,17 @@ h2{
     height: 15%;
     margin-right: 10%;
     border-radius: 45%;
+    pointer-events: none;
+}
+
+.projetp-paysage img{
+    width: 170%;
+    pointer-events: none;
+}
+
+.projetp-bouteille img{
+    width: 170%;
+    pointer-events: none;
 }
 
 .projetp-titre{
@@ -298,6 +337,13 @@ h2{
 }
 
 .projetp-titre-paysage{
+    font-size: 350%;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 600;
+    color: rgb(9,171,157);
+}
+
+.projetp-titre-bouteille{
     font-size: 350%;
     font-family: "Readex Pro", sans-serif;
     font-weight: 600;
@@ -316,7 +362,16 @@ h2{
     background-color:rgb(40,40,40);
     color: white;
     text-align: center;
-    padding: 15% 10% 0 10%;
+    padding: -5% 10% 0 10%;
+    margin: 0 0 0 15%;
+}
+
+.projetp-text-bouteille{
+    background-color:rgb(40,40,40);
+    color: white;
+    text-align: center;
+    padding: 5% 10% 0 10%;
+    margin: 0 0 0 15%;
 }
 
 .projetp-description-premier{
@@ -338,6 +393,13 @@ h2{
 .projetp-paysage{
     display: flex;
     flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.projetp-bouteille{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
 }
 
 .carousel {
@@ -358,6 +420,7 @@ h2{
 
 .carousel img {
     width: 70%;
+    pointer-events: none;
 }
 
 .carousel-control {
@@ -373,8 +436,102 @@ h2{
     left: 5%;
 }
 
-.carousel-control.next {
+.carousel-control.next{
     right: 34%;
+}
+/*<--------Projet Reboot-------->*/
+.projet-reboot-deux{
+    background-color: rgb(9,171,157);
+    color: white;
+}
+
+.projet-reboot-deux p{
+    font-family: "Readex Pro", sans-serif;
+    font-size: 125%;
+    margin: 2% 20% 0 20%;
+    padding-top: 5%;
+}
+
+.fin-projetr{
+    padding-bottom: 5%;
+}
+
+.projet-reboot-deux ul{
+    font-family: "Readex Pro", sans-serif;
+    font-size: 125%;
+    list-style-position: inside;
+    margin-left: 0; 
+    padding: 0 0 5% 25%;
+}
+
+.presentation-projetr{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.presentation-projetr2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.presentation-projetr-text{
+    margin: 0 0 0 10%;
+    background-color: rgb(40,40,40);
+
+}
+
+.presentation-projetr-text2{
+    margin: 0 10% 0 0;
+    background-color: rgb(40,40,40);
+
+}
+
+.presentation-projetr img{
+    width: 30%;
+    pointer-events: none;
+    margin-right: 10%;
+}
+
+.presentation-projetr2 img{
+    width: 30%;
+    pointer-events: none;
+    margin-left: 10%;
+}
+
+.presentation-projetr-titre{
+    color: rgb(9,171,157);
+}
+
+.presentation-projetr p{
+    color: white;
+    padding: 0 10% 0 10%;
+    font-size: 150%;
+}
+
+.presentation-projetr2 p{
+    color: white;
+    padding: 0 10% 0 10%;
+    font-size: 150%;
+}
+
+/*<--------musée-------->*/
+.musée{
+    font-size: 350%;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 600;
+    color: rgb(9,171,157);
+    padding: 5% 5% 0 5%;
+    margin: 0 0 0 15%;
+}
+
+.musée-text-deux{
+    background-color: rgb(9,171,157);
+    color: white;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 125%;
+    padding: 2% 20% 2% 20%;
 }
 
 /*<--------footer-------->*/

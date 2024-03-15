@@ -15,7 +15,7 @@
         <a>ANTOINE-LE-GUENIC-PORTFOLIO</a>
     </div>
     <div class="header_right">
-        <a href="accueil.html">Accueil</a>
+        <a href="index.html">Accueil</a>
         <a href="#partie-md">Me découvrir</a>
         <a href="#partie-mps">Mes projets</a>
     </div>
@@ -70,7 +70,7 @@
                     <div class="card-body">
                         <h3>Projet Reebot </h3>
                         <p>notre équipe a participé au Hackathon Reboot, l’objectif : faire en trois jours une production répondant au thème “ralentir ou périr”</p>
-                        <a href=""><button class="button_cards">Lire la suite</button></a>
+                        <a href="projet-reboot.html" onclick="window.location.href = 'projet-reboot.html';"><button class="button_cards">Lire la suite</button></a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                     <div class="card-body">
                         <h3>Refonte de Musée</h3>
                         <p>L’une refonte graphique d’un site web, qui comprend la page d’accueil ainsi qu’une seconde page. La seconde contrainte a été de prévoir un design pour le rendu sur les ordinateurs mais aussi pour les appareils mobiles.</p>
-                        <a href=""><button class="button_cards">Lire la suite</button></a>
+                        <a href="musée-guimet.html"><button class="button_cards">Lire la suite</button></a>
                     </div>
                 </div>
             </div>
@@ -100,6 +100,38 @@
         </div>
     </div>
 
+    <div class="CV">
+        <p>____________________________________________________________________________________________________________________________________________________</p>
+        <h2 class="moncv">Mon CV</h2>
+        <img src="images/LE GUENIC Antoine CV.jpg" alt="mon CV">
+        <div>
+            <button id="generateDownloadButton" class="generateDownloadButton">Générer et Télécharger l'image</button>
+            <script>
+                document.getElementById('generateDownloadButton').addEventListener('click', function() {
+                    // Suppose que vous avez une fonction pour générer l'URL de l'image
+                    const imageUrl = generateImageUrl(); // À remplacer par votre fonction
+    
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = imageUrl;
+                    downloadLink.download = 'LE GUENIC_Antoine_CV.pdf';
+                    downloadLink.innerHTML = 'Télécharger l\'image';
+                    downloadLink.style.display = 'none'; // Optionnel : pour masquer le lien
+    
+                    document.body.appendChild(downloadLink);
+    
+                    downloadLink.click();
+    
+                    document.body.removeChild(downloadLink);
+                });
+    
+                function generateImageUrl() {
+                    // Logique pour générer l'URL de l'image
+                    return 'images/LE GUENIC Antoine CV.jpg';
+                }
+            </script>
+        </div>
+    </div>
+
     <footer>
         <div class="colonne">
             <h3>Contact</h3>
@@ -109,9 +141,18 @@
         <div class="colonne">
             <h3>Vers les autres pages</h3>
             <ul>
-                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="medecouvrir.html">Me découvrir</a></li>
-                <li><a href="page3.html">Page 3</a></li>
+                <li><a href="projet-photo.html">Projet Photo</a></li>
+            </ul>
+        </div>
+        <div class="colonne">
+            <h3>Mes autres projets</h3>
+            <ul>
+                <li><a href="projet-photo.html">Projet Photo</a></li>
+                <li><a href="projet-photo.html">Projet reboot</a></li>
+                <li><a href="medecouvrir.html">Me découvrir</a></li>
+                <li><a href="projet-photo.html">Projet Photo</a></li>
             </ul>
         </div>
         <div class="colonne">
