@@ -9,7 +9,7 @@ header{
     width: 100%;
 }
 header a{
-    color: white;
+    color: #FAFAFA;
     text-decoration: none;
     font-size: large;
     padding: 15px;
@@ -82,7 +82,7 @@ html {
     display: none;
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: #FAFAFA;
     margin: 6px 0;
 }
 
@@ -132,7 +132,7 @@ body{
 }
 
 .presentation p{
-    color: white;
+    color: #FAFAFA;
     font-family: 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: 400;
@@ -167,7 +167,7 @@ h1{
 }
 
 .description{
-    color: white;
+    color: #FAFAFA;
     font-size: 150%;
     font-weight: 400;
     padding: 2% 5% 0 5%;
@@ -175,7 +175,7 @@ h1{
 }
 
 .button_green{
-    color: white; 
+    color: #FAFAFA; 
     border: none; 
     padding: 10px 20px; 
     margin: 5% 0 0 20%;
@@ -187,14 +187,14 @@ h1{
 
 .button_green a{
     text-decoration: none;
-    color: white;
+    color: #FAFAFA;
 }
 
 /*<--------deuxième partie-------->*/
 
 .medecouvrir{
     background-color: rgb(9,171,157);
-    color: white;
+    color: #FAFAFA;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -206,6 +206,7 @@ h2{
     display: flex;
     align-items: center;
     text-align: center;
+    font-family: "Readex Pro", sans-serif;
 }
 
 .medecouvrir p{
@@ -231,7 +232,7 @@ h2{
     font-size: 16px;
     border-radius: 5px; 
     cursor: pointer; 
-    background-color: white;
+    background-color: #FAFAFA;
 }
 
 .button_white a{
@@ -241,9 +242,14 @@ h2{
 
 /*<--------deuxième partie-------->*/
 
+.carteligne{
+    display: flex;
+    flex-direction: row;
+}
+
 .projets{
     font-family: "Readex Pro", sans-serif;
-    color: white;
+    color: #FAFAFA;
 }
 
 .premiere-ligne{
@@ -252,33 +258,73 @@ h2{
 }
 
 .card {
-    margin-left: 10%;
-    border-radius: 5px;
-    overflow: hidden;
-    width: calc(80% - 20px); 
+    width: 500px; 
+    margin: 5%;
+    background-color: white; 
+    box-shadow: 0px 5px 20px #999; 
 }
+
+.card a { /*5*/
+    color: #FAFAFA; 
+    text-decoration: none;
+}
+
+.card:hover .card-image img { /*6*/
+    width: 100%;
+    filter: grayscale(0);
+}
+
+.card-image {
+    height: 250px;/*1*/
+    position: relative;/*2*/
+    overflow: hidden;/*3*/
+}
+  .card-image img {
+    width: 75%;/*4*/
+      /*5 - Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);/*6*/
+      /*7 - Transition */
+    transition-property: filter width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+
+.card-body {
+    text-align:center;  /*1*/
+    padding: 15px 20px; /*2*/
+    box-sizing: border-box; /*3*/
+}
+
+.card-date {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-title, .card-excerpt {
+    font-family: 'Playfair Display', serif;
+}
+
 
 @media screen and (max-width: 768px) {
     .card {
         width: calc(100% - 20px); 
-        flex-wrap: wrap;
+        flex-direction: column;
     }
-}
-
-.card img {
-    width: 600px; 
-    height: auto;
-    object-fit: cover; 
+    .carteligne{
+        flex-direction: column;
+    }
 }
 
 .card-body {
     padding: 20px;
     background-color: rgb(40,40,40);
-    margin-bottom: 5%;
 }
 
 .button_cards{
-    color: white; 
+    color: #FAFAFA; 
     border: none; 
     padding: 10px 20px; 
     margin: 5% 0 0 0;
@@ -301,7 +347,7 @@ h2{
 }
 
 .medecouvrir-description{
-    color: white;
+    color: rgb(239, 237, 237);
     font-size: 150%;
     font-weight: 400;
     padding: 5% 5% 0 5%;
@@ -316,7 +362,7 @@ h2{
 
 .medecouvrir-deux{
     background-color: rgb(9,171,157);
-    color: white;
+    color: #FAFAFA;
 }
 .medecouvrir-deux p{
     font-family: "Readex Pro", sans-serif;
@@ -329,7 +375,7 @@ h2{
 }
 
 .medecouvrir-trois{
-    color: white;
+    color: rgb(237, 237, 237);
 }
 
 .trait-passion{
@@ -368,7 +414,7 @@ h2{
 }
 
 .CV p{
-    color: white;
+    color: #FAFAFA;
 }
 
 .CV img{
@@ -380,7 +426,7 @@ h2{
 }
 
 .generateDownloadButton{
-    color: white; 
+    color: #FAFAFA; 
     border: none; 
     padding: 10px 20px; 
     margin: 0 0 5% 40%;
@@ -409,19 +455,6 @@ h2{
         font-size: 150%;
     }
 
-    h1{
-        text-align: center;
-        margin: 0;
-        font-size: 300%;
-    }
-
-    .medecouvrir-description{
-        text-align: center;
-        margin: 0;
-        font-size: 125%;
-        padding: 10% 10% 0 10%;
-    }
-
     .generateDownloadButton{
         margin: 0; 
         margin-bottom: 5%;
@@ -437,6 +470,18 @@ h2{
     .medecouvrir-img{
         display: none;
     }
+    h1{
+        text-align: center;
+        margin: 0;
+        font-size: 300%;
+    }
+
+    .medecouvrir-description{
+        text-align: center;
+        margin: 0;
+        font-size: 125%;
+        padding: 10% 10% 0 10%;
+    }
 }
 
 @media screen and (max-width: 925px) {
@@ -448,10 +493,16 @@ h2{
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 1130px) {
+    .CV p{
+        display: none;
+    }
+}
 /*<--------Page Projet Photo-------->*/
 
 .projetp-description{
-    color: white;
+    color: #FAFAFA;
     font-size: 150%;
     font-weight: 400;
     padding: 5% 5% 0 5%;
@@ -499,7 +550,7 @@ h2{
 
 .projetp-text{
     background-color:rgb(40,40,40);
-    color: white;
+    color: #FAFAFA;
     text-align: center;
     margin: 0 0 0 15%;
     padding: 10% 10% 0 10%;
@@ -507,7 +558,7 @@ h2{
 
 .projetp-text-paysage{
     background-color:rgb(40,40,40);
-    color: white;
+    color: #FAFAFA;
     text-align: center;
     padding: -5% 10% 0 10%;
     margin: 0 0 0 15%;
@@ -515,7 +566,7 @@ h2{
 
 .projetp-text-bouteille{
     background-color:rgb(40,40,40);
-    color: white;
+    color: #FAFAFA;
     text-align: center;
     padding: 5% 10% 0 10%;
     margin: 0 0 0 15%;
@@ -529,7 +580,7 @@ h2{
 .projetp-description-deuxieme{
     font-size: 125%;
     font-family: "Readex Pro", sans-serif;
-    color: white;
+    color: #FAFAFA;
 }
 .projetp-portrait{
     display: flex;
@@ -574,7 +625,7 @@ h2{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
+    color: #FAFAFA;
     font-size: 2rem;
     text-decoration: none;
     border-radius: 100%;
@@ -589,7 +640,7 @@ h2{
 /*<--------Projet Reboot-------->*/
 .projet-reboot-deux{
     background-color: rgb(9,171,157);
-    color: white;
+    color: #FAFAFA;
 }
 
 .projet-reboot-deux p{
@@ -652,13 +703,13 @@ h2{
 }
 
 .presentation-projetr p{
-    color: white;
+    color: #FAFAFA;
     padding: 0 10% 0 10%;
     font-size: 150%;
 }
 
 .presentation-projetr2 p{
-    color: white;
+    color: #FAFAFA;
     padding: 0 10% 0 10%;
     font-size: 150%;
 }
@@ -675,14 +726,14 @@ h2{
 
 .musée-text-deux{
     background-color: rgb(9,171,157);
-    color: white;
+    color: #FAFAFA;
     font-family: "Readex Pro", sans-serif;
     font-size: 125%;
     padding: 2% 20% 2% 20%;
 }
 
 .partie-mps{
-    color: white;
+    color: #FAFAFA;
 }
 
 .image-musee-site img{
@@ -695,13 +746,13 @@ h2{
 }
 
 .image-musee-site p{
-    color: white;
+    color: #FAFAFA;
 }
 
 /*<--------footer-------->*/
 footer {
     background-color: rgb(17,17,17);
-    color: white;
+    color: #FAFAFA;
     padding: 5%;
     padding-bottom: 7%;
     display: flex;
@@ -736,7 +787,7 @@ footer {
 
 .colonne ul li a {
     text-decoration: none;
-    color: white;
+    color: #FAFAFA;
 }
 
 .colonne ul li a:hover {
