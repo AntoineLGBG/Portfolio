@@ -56,13 +56,13 @@ html {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #FAFAFA;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #111;
+    color: rgb(9,171,157);
 }
 
   /* Active class */
@@ -188,6 +188,16 @@ h1{
 .button_green a{
     text-decoration: none;
     color: #FAFAFA;
+}
+
+@media screen and (max-width: 705px) {
+    .presentation {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .presentation img{
+        margin-right: 0%;
+    }
 }
 
 /*<--------deuxième partie-------->*/
