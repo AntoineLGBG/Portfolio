@@ -477,9 +477,16 @@ h2{
 }
 
 @media screen and (max-width: 913px) {
-    .medecouvrir-img{
-        display: none;
+    .presentation_medecouvrir{
+        display: flex;
+        flex-direction: column;
     }
+    
+    .medecouvrir-img{
+        padding-top: 5%;
+        margin: auto;
+    }
+
     h1{
         text-align: center;
         margin: 0;
@@ -647,6 +654,69 @@ h2{
 .carousel-control.next{
     right: 34%;
 }
+
+@media screen and (max-width: 730px) {
+
+    
+
+    .projetp-portrait{
+        flex-direction: column;
+    }
+
+    .projetp-paysage {
+        flex-direction: column;
+    }
+
+    .projetp-bouteille{
+        flex-direction: column;
+    }
+
+    .projetp-titre{
+        font-size: 250%;
+    }
+    
+    .projetp-titre-paysage{
+        font-size: 250%;
+    }
+    
+    .projetp-titre-bouteille{
+        font-size: 250%;
+    }
+
+    .projetp-text{
+        align-items: center;
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-top: 0%;
+    }
+
+    .projetp-text-paysage{
+        align-items: center;
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-top: 0%;
+    }
+    
+    .projetp-text-bouteille{
+        align-items: center;
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-top: 0%;
+    }
+
+    .carousel-item active{
+        margin: auto;
+    }
+
+    .carousel{
+        width: 80%;
+        padding-left: 10%;
+        margin-left: 10%;
+    }
+
+
+}
+
 /*<--------Projet Reboot-------->*/
 .projet-reboot-deux{
     background-color: rgb(9,171,157);
