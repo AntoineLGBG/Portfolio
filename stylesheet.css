@@ -829,6 +829,13 @@ h2{
     color: #FAFAFA;
 }
 
+@media screen and (max-width: 730px) {
+    .musée{
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
 /*<--------footer-------->*/
 footer {
     background-color: rgb(17,17,17);
