@@ -966,6 +966,79 @@ h2{
     }
 }
 
+/*<--------infographie-------->*/
+
+.deux-infographies{
+    display: flex;
+    flex-direction: row;
+}
+
+.projet-infographie p{
+    font-family: "Readex Pro", sans-serif;
+    font-size: 125%;
+    margin: 2% 20% 0 20%;
+    text-align: left;
+}
+
+.bouton-infographie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.titre-infographie{
+    padding-bottom: 0%;
+}
+
+.projet-infographie{
+    background-color: rgb(9,171,157);
+    color: #FAFAFA;
+}
+
+.deux-infographies{
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.deux-infographies img{
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+.generateDownloadButton-info{
+    color: rgb(17,17,17); 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    background-color: #FAFAFA;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .deux-infographies{
+        display: flex;
+        flex-direction: column;
+    }
+    .deux-infographies{
+        align-items: center;
+        margin-top: 5%;
+    }
+    .deux-infographies img{
+        width: 60%;
+    }
+    .projet-infographie p{
+        font-family: "Readex Pro", sans-serif;
+        font-size: 100%;
+        margin: 2% 20% 0 20%;
+        text-align: left;
+    }
+}
+
+/*<--------colloque-------->*/
+
+
 
 /*<--------footer-------->*/
 footer {

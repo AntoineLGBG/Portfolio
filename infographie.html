@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="scrypt.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-dTfwGEaxHSSKtsqMS4nHsNenHM6brFCasq3OVrP4ChJ6bHnm1X8K5L8x4xHtAMoI" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inter&family=Montserrat&family=Nosifer&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<header>
+    <div class="header_left">
+        <a>ANTOINE-LE-GUENIC-PORTFOLIO</a>
+    </div>
+    <div class="header_right">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#partie-md">Me découvrir</a>
+        <a href="index.html#partie-mps">Mes projets</a>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#partie-md">Me découvrir</a></li>
+                <li><a href="index.html#partie-mps">Mes projets</a></li>
+            </ul>
+        </div>
+        
+        <a href="#" id="openBtn">
+        <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        </a>
+    
+        <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+            var sidenavLinks = document.getElementsByClassName("sidenav-link");
+            
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+            
+            for (var i = 0; i < sidenavLinks.length; i++) {
+                sidenavLinks[i].onclick = closeNav;
+            }
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                sidenav.classList.add("active");
+            }
+            
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                sidenav.classList.remove("active");
+            }
+        </script>
+</header>
+<body>
+    <div class="presentation">
+        <div class="text_present">
+            <h1>Infographies</h1>
+            <p class="description">En groupe de 6 étudiants, nous avons eu à réaliser deux infographies. La première sur un écosystème permettant aux start-ups de se développer et l'infographie d'une start-up</p>
+            <button class="button_green" ><a href="https://tiny-sprite-1443f6.netlify.app">télécharger les infographies</a></button>
+        </div>
+        <img src="images/Logo Ruche.png" alt="photo portrait">
+    </div>
+
+    <div class="projet-infographie">
+        <h2 class="titre-infographie">Notre Projet</h2>
+        <p> Du lundi 4 au vendredi mars 2024, nous nous sommes plongés dans l'univers des start-ups.<br>
+            Par groupes de 6, nous avons travaillé sur des infographies détaillées, explorant un écosystème ici la Ruche et une start-up Foodtruck Agency.<br>
+            Ce projet nous a permis de plonger au cœur de l'entrepreneuriat, de comprendre les dynamiques complexes qui façonnent les start-ups et de découvrir des idées novatrices qui changent la donne dans divers domaines.
+        </p>
+        <div class="deux-infographies">
+            <img src="images/Final 1.png" alt="infographie de l'écosystème la ruche">
+            <img src="images/Nono 1.png" alt="infographie de la start-up Foodtruck Agency">
+        </div>
+        <div class="bouton-infographie">
+            <div>
+                <button id="downloadButton" class="generateDownloadButton-info">Télécharger ruche</button>
+                <script>
+                document.getElementById('downloadButton').addEventListener('click', function() {
+                    // URL de l'image à télécharger
+                    const imageUrl = 'images/Final 1.pdf';
+                    // Créer un élément <a> pour le téléchargement
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = imageUrl;
+                    downloadLink.download = 'images/Final 1.pdf'; // Nom du fichier téléchargé
+                    // Ajouter le lien de téléchargement à la page (optionnel)
+                    document.body.appendChild(downloadLink);
+
+                    // Simuler un clic sur le lien pour déclencher le téléchargement
+                    downloadLink.click();
+
+                    // Supprimer le lien après le téléchargement (optionnel)
+                    document.body.removeChild(downloadLink);
+                });
+                </script>                 
+            </div>
+            <div>
+                <button id="downloadButton2" class="generateDownloadButton-info">Télécharger foodtruck</button>
+                <script>
+                document.getElementById('downloadButton2').addEventListener('click', function() {
+                    // URL de l'image à télécharger
+                    const imageUrl = 'images/Nono 1.pdf';
+                    // Créer un élément <a> pour le téléchargement
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = imageUrl;
+                    downloadLink.download = 'images/Nono 1.pdf'; // Nom du fichier téléchargé
+                    // Ajouter le lien de téléchargement à la page (optionnel)
+                    document.body.appendChild(downloadLink);
+
+                    // Simuler un clic sur le lien pour déclencher le téléchargement
+                    downloadLink.click();
+
+                    // Supprimer le lien après le téléchargement (optionnel)
+                    document.body.removeChild(downloadLink);
+                });
+                </script>   
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="colonne">
+        <h3>Contact</h3>
+        <p><strong>Email:</strong> antoine.le-guenic@mmibordeaux.com</p>
+        <p><strong>Téléphone:</strong> 07 68 54 97 27</p>
+    </div>
+    <div class="colonne">
+        <h3>Vers les autres pages</h3>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="medecouvrir.html">Me découvrir</a></li>
+        </ul>
+    </div>
+    <div class="colonne">
+        <h3>Mes autres projets</h3>
+        <ul>
+            <li><a href="projet-photo.html">Projet Photo</a></li>
+            <li><a href="musée-guimet.html">Refonte d'un musée</a></li>
+        </ul>
+    </div>
+    <div class="colonne">
+        <h3>Mentions Légales</h3>
+        <p>© 2024 Nom de votre entreprise. Tous droits réservés.</p>
+    </div>
+    <div class="trait-footer">
+        <p>______________________________________________________________________________________________</p>
+    </div>
+    <div class="logo-container">
+        <div class="logo">
+            <a href="https://github.com/AntoineLGBG"><img src="images/github.png" alt="GitHub Logo"></a>
+        </div>
+        <div class="logo">
+            <a href="www.linkedin.com/in/antoine-le-guenic-44098a294"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
+        </div>
+        <div class="logo">
+            <a href="antoine.le-guenic@mmibordeaux.com"><img src="images/e-mail.png" alt="Email"></a>
+        </div>
+    </div>        
+</footer>
