@@ -1031,6 +1031,37 @@ h2{
 
 /*<--------colloque-------->*/
 
+.btn-colloque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster-scientifique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-scientifique img {
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.projet-colloque{
+    background-color: rgb(9,171,157);
+    color: #FAFAFA;
+}
+
+.projet-colloque p{
+    font-family: "Readex Pro", sans-serif;
+    font-size: 125%;
+    margin: 2% 20% 0 20%;
+    padding-bottom: 2%;
+    text-align: left;
+}
+
 .presentation-colloque{
     display: flex;
     flex-direction: row;

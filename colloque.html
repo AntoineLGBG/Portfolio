@@ -64,11 +64,42 @@
 <body>
     <div class="presentation-colloque">
         <div class="text_present">
-            <h1>Infographies</h1>
-            <p class="description">En groupe de 6 étudiants, nous avons eu à réaliser deux infographies. La première sur un écosystème permettant aux start-ups de se développer et l'infographie d'une start-up</p>
-            <button class="button_green" ><a href="https://tiny-sprite-1443f6.netlify.app">télécharger les infographies</a></button>
+            <h1>Colloque Scientifique</h1>
+            <p class="description">Découvrez l'édition 2024 du colloque scientifique "Digital Natives" organisé par les MMI de Bordeaux Montaigne, explorant le numérique sous un angle innovant. Accédez aux présentations, découvrez les intervenants et plongez dans les sujets pertinents abordés lors de cet événement enrichissant.</p>
+            <button class="button_green" ><a href="https://digitalnatives.mmibordeaux.com/edition-2024/">Le Site Web</a></button>
         </div>
         <img src="images/digital-logo.png" alt="logo colloque">
+    </div>
+
+    <div class="projet-colloque">
+        <h2 class="titre-infographie">Qu'est ce que le Colloque </h2>
+        <p>Digital Natives est un projet de conférence centré sur la technologie créé dans le but d’éveiller les esprits sur ses différentes problématiques. Les étudiants des Métiers du Multimédia et de l’Internet (MMI) de l’Université Bordeaux Montaigne se sont engagés à mettre en place cet évènement qui leur tenait à coeur, dans lequel sensibiliser est le maître mot.
+        </p>
+    </div>
+
+    <div class="poster-scientifique">
+        <img src="images/rollup-MMI-85x200cm_2024-1.png" alt="Poster scientifique">
+    </div>
+    <div class="btn-colloque">
+        <button id="downloadButton" class="generateDownloadButton-info">Télécharger ruche</button>
+        <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            // URL de l'image à télécharger
+            const imageUrl = 'images/rollup-MMI-85x200cm_2024-1.png';
+            // Créer un élément <a> pour le téléchargement
+            const downloadLink = document.createElement('a');
+            downloadLink.href = imageUrl;
+            downloadLink.download = 'images/rollup-MMI-85x200cm_2024-1.png'; // Nom du fichier téléchargé
+            // Ajouter le lien de téléchargement à la page (optionnel)
+            document.body.appendChild(downloadLink);
+
+            // Simuler un clic sur le lien pour déclencher le téléchargement
+            downloadLink.click();
+
+            // Supprimer le lien après le téléchargement (optionnel)
+            document.body.removeChild(downloadLink);
+        });
+        </script>                 
     </div>
 
 </body>
