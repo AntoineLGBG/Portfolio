@@ -185,6 +185,11 @@ h1{
     background-color: rgb(9,171,157);
 }
 
+.button_green:hover{
+    background-color: rgb(46, 227, 212); 
+    transform: scale(1.05); 
+}
+
 .button_green a{
     text-decoration: none;
     color: #FAFAFA;
@@ -250,12 +255,26 @@ h2{
     color: black;
 }
 
+.button_white a:hover {
+    color: grey;
+    font-size: 17px; 
+}
+
+@media screen and (max-width: 600px) {
+    .button_white {
+        margin: 5% 0 5% 35%;
+    }
+
+}
+
+
 /*<--------deuxième partie-------->*/
 
 .carteligne{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .projets{
@@ -290,7 +309,7 @@ h2{
     position: relative;/*2*/
     overflow: hidden;/*3*/
 }
-  .card-image img {
+.card-image img {
     width: 75%;/*4*/
       /*5 - Méthode de centrage en fonction de la taille de l'image */
     position: absolute;
@@ -302,7 +321,7 @@ h2{
     transition-property: filter width; 
     transition-duration: .3s;
     transition-timing-function: ease;
-  }
+}
 
 .card-body {
     text-align:center;  /*1*/
@@ -342,7 +361,12 @@ h2{
     font-size: 16px;
     border-radius: 5px; 
     cursor: pointer; 
-    background-color: rgb(9,171,157);
+    background-color: rgb(28, 196, 182);
+}
+
+.button_cards:hover {
+    background-color: rgb(46, 227, 212); 
+    transform: scale(1.05); 
 }
 
 .deuxieme-ligne{
@@ -445,6 +469,11 @@ h2{
     border-radius: 5px; 
     cursor: pointer; 
     background-color: rgb(9,171,157);
+}
+
+.generateDownloadButton:hover{
+    background-color: rgb(46, 227, 212); 
+    transform: scale(1.05); 
 }
 
 @media screen and (max-width: 700px) {
@@ -1030,6 +1059,28 @@ h2{
 }
 
 /*<--------colloque-------->*/
+
+.chiffrep {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 125%;
+}
+
+.chiffres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.intervenants{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 .btn-colloque{
     display: flex;
