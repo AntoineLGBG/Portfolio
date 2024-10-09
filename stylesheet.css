@@ -1182,6 +1182,7 @@ footer {
 .colonne {
     flex: 1;
     text-decoration: none;
+    padding-bottom: 3%;
 }
 
 .colonne h3 {
