@@ -688,15 +688,18 @@ h2{
 
     .projetp-portrait{
         flex-direction: column;
+        align-items: center;
     }
 
     .projetp-paysage {
         flex-direction: column;
+        align-items: center;
     }
 
     .projetp-bouteille{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .projetp-titre{
@@ -735,7 +738,13 @@ h2{
     .carousel-item active{
         margin: auto;
     }
+}
 
+@media screen and (max-width: 455px) {
+
+    .presentation p{
+        margin: 0 0 0 5%;
+    }
 
 }
 
@@ -849,6 +858,8 @@ h2{
 .image-musee-site{
     display: flex;
     flex-direction: row;
+    display: flex;
+    align-items: center;
 }
 
 .image-musee-site p{
@@ -859,8 +870,6 @@ h2{
 .img-muse-site{
     display: flex;
     flex-direction: row;
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 .redirection-site{
@@ -903,6 +912,9 @@ h2{
         flex-direction: column;
         margin: auto;
     }
+    .imgmuse{
+        align-items: center;
+    }
     .PC{
         margin-right: 5%;
     }
@@ -930,8 +942,6 @@ h2{
     }
     .img-muse-site{
         align-items: center;
-        margin-left: 10%;
-        margin-right: 2%;
     }
     .PC{
         margin-right: -5%;
