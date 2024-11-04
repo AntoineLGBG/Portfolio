@@ -189,15 +189,12 @@
             </div>
         </div>
 
-    <div class="CV">
-        <p>_____________________________________________________________________________________________________</p>
-
         <div class="projets">
             <h2 id="partie-mps">MES PROJETS D'ENTREPRISE</h2>
             <div class="carteligne">
                 <div class="card">
-                    <a href="projet-photo.html">
-                        <div class="card-image"><img src="images/premier-projet.webp" alt="bouteille" /></div>
+                    <a href="livret.html">
+                        <div class="card-image"><img src="images/Logo CDAD.png" alt="bouteille" /></div>
                         <div class="card-body">
                             <div class="card-title">
                                 <h3>Livret d'accueil</h3>
@@ -205,7 +202,7 @@
                             <div class="card-excerpt">
                                 <p>Réalisation d'un livret d'accueil complet destiné au CDAD, visant à informer les nouveaux arrivants sur les services proposés, les démarches à suivre pour faciliter leur intégration et leur orientation.</p>
                             </div>
-                            <a href="projet-photo.html" onclick="window.location.href = 'projet-photo.html';"><button class="button_cards">Lire la suite</button></a>
+                            <a href="livret.html" onclick="window.location.href = 'livret.html';"><button class="button_cards">Lire la suite</button></a>
                         </div>
                     </a>
                 </div>
@@ -227,34 +224,37 @@
             </div>
         </div>
 
-        <h2 class="moncv">Mon CV</h2>
-        <img src="images/LE GUENIC Antoine CV.jpg" alt="mon CV">
-        <div>
-            <button id="generateDownloadButton" class="generateDownloadButton">Générer et Télécharger l'image</button>
-            <script>
-                document.getElementById('generateDownloadButton').addEventListener('click', function() {
-                    // Suppose que vous avez une fonction pour générer l'URL de l'image
-                    const imageUrl = generateImageUrl(); // À remplacer par votre fonction
-    
-                    const downloadLink = document.createElement('a');
-                    downloadLink.href = imageUrl;
-                    downloadLink.download = 'LE GUENIC_Antoine-CV.pdf';
-                    downloadLink.innerHTML = 'Télécharger l\'image';
-                    downloadLink.style.display = 'none'; // Optionnel : pour masquer le lien
-    
-                    document.body.appendChild(downloadLink);
-    
-                    downloadLink.click();
-    
-                    document.body.removeChild(downloadLink);
-                });
-    
-                function generateImageUrl() {
-                    // Logique pour générer l'URL de l'image
-                    return 'images/LE GUENIC_Antoine-CV.pdf';
-                }
-            </script>
-        </div>
+        <div class="CV">
+        <p>_____________________________________________________________________________________________________</p>
+
+            <h2 class="moncv">Mon CV</h2>
+            <img src="images/LE GUENIC Antoine CV.jpg" alt="mon CV">
+            <div>
+                <button id="generateDownloadButton" class="generateDownloadButton">Générer et Télécharger l'image</button>
+                <script>
+                    document.getElementById('generateDownloadButton').addEventListener('click', function() {
+                        // Suppose que vous avez une fonction pour générer l'URL de l'image
+                        const imageUrl = generateImageUrl(); // À remplacer par votre fonction
+        
+                        const downloadLink = document.createElement('a');
+                        downloadLink.href = imageUrl;
+                        downloadLink.download = 'LE GUENIC_Antoine-CV.pdf';
+                        downloadLink.innerHTML = 'Télécharger l\'image';
+                        downloadLink.style.display = 'none'; // Optionnel : pour masquer le lien
+        
+                        document.body.appendChild(downloadLink);
+        
+                        downloadLink.click();
+        
+                        document.body.removeChild(downloadLink);
+                    });
+        
+                    function generateImageUrl() {
+                        // Logique pour générer l'URL de l'image
+                        return 'images/LE GUENIC_Antoine-CV.pdf';
+                    }
+                </script>
+            </div>
     </div>
 
     <footer>

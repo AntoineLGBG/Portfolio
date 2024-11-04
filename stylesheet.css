@@ -374,6 +374,10 @@ h2{
     flex-direction: row;
 }
 
+.trait{
+    align-items: center;
+}
+
 /*<--------Page me découvrir-------->*/
 
 .presentation_medecouvrir{
