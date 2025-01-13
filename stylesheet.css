@@ -221,12 +221,14 @@ h2{
     display: flex;
     align-items: center;
     text-align: center;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
 }
 
 .medecouvrir p{
     font-size: 125%;
-    margin: 2% 20% 0 20%;
+    text-align: center;
+    margin: 0 20% 0 20%;
+    text-align: justify;
 }
 
 .qualité{
@@ -324,9 +326,9 @@ h2{
 }
 
 .card-body {
-    text-align:center;  /*1*/
-    padding: 15px 20px; /*2*/
-    box-sizing: border-box; /*3*/
+    text-align:center;  
+    padding: 15px 20px; 
+    box-sizing: border-box; 
 }
 
 .card-date {
@@ -404,9 +406,11 @@ h2{
     color: #FAFAFA;
 }
 .medecouvrir-deux p{
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-size: 125%;
-    margin: 2% 20% 0 20%;
+    text-align: center;
+    margin: 0 20% 0 20%;
+    text-align: justify;
 }
 
 .fin-partdeux{
@@ -507,6 +511,11 @@ h2{
     .CV img{
         width: 50%;
         margin-bottom: 5%;
+    }
+
+    .medecouvrir-deux p{
+        margin: 0 10% 0 10%;
+        text-align: left;
     }
 }
 
@@ -1272,4 +1281,11 @@ footer {
         margin-top: 5%;
         justify-content: center;
     }
+}
+
+/*<--------Livret-------->*/
+
+.Livret-img{
+    max-width: 300px;
+
 }
