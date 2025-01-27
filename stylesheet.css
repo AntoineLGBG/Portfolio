@@ -19,7 +19,7 @@ header a{
 }
 
 .header_left{
-    font-family: "Readex Pro", sans-serif;
+    font-family: " Courier New ", sans-serif;
     font-weight: 600;
     size: 28px;
 }
@@ -122,6 +122,10 @@ body{
     margin: 0;
 }
 
+body:any-link {
+    text-decoration: none;
+}
+
 /*<--------première partie-------->*/
 .presentation{
     display: flex;
@@ -158,7 +162,7 @@ h1{
 .prenom{
     color: rgb(9,171,157);
     font-size: 350%;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-weight: 600;
     padding: 2% 5% 0 5%;
     margin-left: 15%;
@@ -280,7 +284,7 @@ h2{
 }
 
 .projets{
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     color: #FAFAFA;
 }
 
@@ -589,21 +593,21 @@ h2{
 
 .projetp-titre{
     font-size: 350%;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-weight: 600;
     color: rgb(9,171,157);
 }
 
 .projetp-titre-paysage{
     font-size: 350%;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-weight: 600;
     color: rgb(9,171,157);
 }
 
 .projetp-titre-bouteille{
     font-size: 350%;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-weight: 600;
     color: rgb(9,171,157);
 }
@@ -631,12 +635,12 @@ h2{
 
 .projetp-description-premier{
     font-size: 125%;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
 }
 
 .projetp-description-deuxieme{
     font-size: 125%;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     color: #FAFAFA;
 }
 .projetp-portrait{
@@ -768,7 +772,7 @@ h2{
 }
 
 .projet-reboot-deux p{
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-size: 125%;
     margin: 2% 20% 0 20%;
     padding-top: 5%;
@@ -779,7 +783,7 @@ h2{
 }
 
 .projet-reboot-deux ul{
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-size: 125%;
     list-style-position: inside;
     margin-left: 0; 
@@ -841,7 +845,7 @@ h2{
 /*<--------musée-------->*/
 .musée{
     font-size: 350%;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-weight: 600;
     color: rgb(9,171,157);
     padding: 5% 5% 0 5%;
@@ -851,7 +855,7 @@ h2{
 .musée-text-deux{
     background-color: rgb(9,171,157);
     color: #FAFAFA;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-size: 125%;
     padding: 2% 20% 2% 20%;
 }
@@ -1019,7 +1023,7 @@ h2{
 }
 
 .projet-infographie p{
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-size: 125%;
     margin: 2% 20% 0 20%;
     text-align: left;
@@ -1074,7 +1078,7 @@ h2{
         width: 60%;
     }
     .projet-infographie p{
-        font-family: "Readex Pro", sans-serif;
+        font-family: "Courier New", sans-serif;
         font-size: 100%;
         margin: 2% 20% 0 20%;
         text-align: left;
@@ -1084,7 +1088,7 @@ h2{
 /*<--------colloque-------->*/
 
 .chiffrep {
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-size: 125%;
 }
 
@@ -1129,7 +1133,7 @@ h2{
 }
 
 .projet-colloque p{
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Courier New", sans-serif;
     font-size: 125%;
     margin: 2% 20% 0 20%;
     padding-bottom: 2%;
@@ -1190,6 +1194,7 @@ footer {
     display: flex;
     justify-content: space-around;
     position: relative; 
+    text-decoration: none;
 }
 
 .colonne {
@@ -1285,7 +1290,12 @@ footer {
 
 /*<--------Livret-------->*/
 
-.Livret-img{
-    max-width: 300px;
-
+.livret-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin-left: 20px;
 }
+
